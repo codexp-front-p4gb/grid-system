@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+.row {
+    width: 100%;
+}
+
+.footer-estilo{
+    background-color: #9B9C9E;
+    color: #ffffff;
+    padding: 20px;;
+}
+
+.footer-links{
+    list-style-type:none;
+    display: inline-block;
+}
+
+.footer-links a{
+    text-decoration: none;
+}
+
 /*
 cor background nav bar:#EDEBEC
 cor H1: #9B9C9E
