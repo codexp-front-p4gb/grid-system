@@ -14,6 +14,33 @@ cor letra footer: #fffff
 
 /*mobile First*/
 
+/* GRID */
+.col-cl-5{
+    width: 12.5%;
+}
+/* CABEÇALHO */
+.cabecalho{
+    background: #EDEBEC;
+    color: gray;
+}
+.cabecalho__img{
+    display: inline-block;
+}
+.cabecalho__img__logo{
+    border-radius: 100%;
+    background: gray;
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+}
+.cabecalho__menu{
+    display: inline-block;
+    float: right;
+    margin: 30px;
+}
+.cabecalho__menu__lista{
+    display: none;
+}
 
 @media (min-width:768px){
     
