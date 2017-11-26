@@ -12,17 +12,17 @@ cor background footer:#9B9C9E
 cor letra footer: #fffff
 */
 
-/*mobile First*/
-
 .janela-opcoes{
     display: inline-block;
 }
 
-.col-cl-4 {width: 33.33%;}
+.janela-opcoes__img{
+    width: 100%;
+}
 
-.col-cl-8 {width: 66.66%;}
-
-.col-cl-12 {width: 100%;} 
+.col-cl-1 {width: 20%;}
+.col-cl-3 {width: 60%;}
+.col-cl-5 {width: 100%;} 
 
 @media screen and (min-width: 768px){
 .col-tb-3 {width: 33.33%;}
@@ -30,16 +30,10 @@ cor letra footer: #fffff
 .col-tb-9 {width: 100%;} 
 }
 
-
-
 @media screen and (min-width: 992px){
 
 .col-dk-3 {width: 25%;}
 .col-dk-6 {width: 50%;}
 .col-dk-9 {width: 75%;}
 .col-dk-12 {width: 100%;} 
-}
-
-@media (min-width:1200px){   
-    
 }
