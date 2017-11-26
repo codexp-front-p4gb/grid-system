@@ -14,7 +14,22 @@ cor letra footer: #fffff
 
 /*mobile First*/
 
+.hero{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 
+.hero__col--text{
+    grid-area: 
+    "hero__col--text hero__col--text"
+    "hero__col--img hero__col--img";
+}
+
+.hero_img{
+    width: 3.6%;
+}
 @media (min-width:768px){
     
 } 
