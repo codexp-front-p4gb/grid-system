@@ -11,16 +11,42 @@ cor paragrafo: #EDEBEC
 cor background footer:#9B9C9E
 cor letra footer: #fffff
 */
-
-/*mobile First*/
-
-
-@media (min-width:768px){
-    
-} 
-@media (min-width:992px){   
-    
+.janela{
+    text-align: center;
 }
-@media (min-width:1200px){   
+
+.janela-opcoes{
+    display: inline-block;
+    padding: 10px;
+}
+
+.janela-opcoes__img{
+    width: 100%;
+}
+
+.col-cl-1 {width: 20%;}
+.col-cl-3 {width: 60%;}
+.col-cl-5 {width: 100%;} 
+
+@media screen and (min-width: 768px){
+.col-tb-3 {width: 33.33%;}
+.col-tb-4 {width: 45.5%;}
+.col-tb-9 {width: 100%;} 
+}
+
+/*@media screen and (min-width: 992px){
+
+.col-dk-3 {width: 25%;}
+.col-dk-6 {width: 50%;}
+.col-dk-9 {width: 75%;}
+.col-dk-12 {width: 100%;} 
+} 
+Comentei porque achei a % abaixo melhor.
+*/
+
+@media screen and (min-width: 992px){
     
+.col-dk-4 {width: 30%;}
+.col-dk-8 {width: 60%;}
+.col-dk-12 {width: 100%;} 
 }
