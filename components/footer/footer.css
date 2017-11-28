@@ -11,7 +11,7 @@
 .footer-estilo{
     background-color: #9B9C9E;
     color: #ffffff;
-    padding: 20px;;
+    padding: 20px;   
 }
 
 .footer-links{
@@ -23,13 +23,26 @@
     text-decoration: none;
 }
 
+.footer-paragrafo{
+    font-weight: normal;
+}
+
+.col-cl-1 {width: 20%;}
+.col-cl-3 {width: 60%;}
+.col-cl-5 {width: 100%;} 
+
+
 /*
-teste
 cor background nav bar:#EDEBEC
 cor H1: #9B9C9E
 cor paragrafo: #EDEBEC
 cor background footer:#9B9C9E
 cor letra footer: #fffff
+
+Desktop com 12 cols
+Tablet com 09 cols
+Celular com 05 cols
+
 */
 
 /*mobile First*/
