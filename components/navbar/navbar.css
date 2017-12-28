@@ -15,26 +15,53 @@ cor letra footer: #fffff
 /*mobile First*/
 
 /* GRID */
+
+/*Gutter */
+[class*='col-']{
+    padding: 10px; 
+}
+
 .col-cl-1{
-    width: 20%;
+    width: calc((100% /5));
 }
 .col-cl-2{
-    width: 40%;
+    width: calc((100% /5)*2);
 }
 .col-cl-3{
-    width: 60%;
+    width: calc((100% /5)*3);
 }
 .col-cl-4{
-    width: 80%;
+    width: calc((100% /5)*4);
 }
 .col-cl-5{
-    width: 100%;
+    width: calc((100% /5)*5); 
+}
+
+/*OFFSET - ESPAÇO EM BRANCO*/
+
+.col-cl-offset-1{
+    margin-left: calc((100% /5));
+}
+.col-cl-offset-2{
+    margin-left: calc((100% /5)*2);
+}
+.col-cl-offset-3{
+    margin-left: calc((100% /5)*3);
+}
+.col-cl-offset-4{
+    margin-left: calc((100% /5)*4);
+}
+.col-cl-offset-5{
+    margin-left: calc((100% /5)*5);
 }
 
 /* CABEÇALHO */
 .cabecalho{
     background: #EDEBEC;
     color: gray;
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
 }
 .cabecalho__img{
     display: inline-block;
@@ -48,8 +75,8 @@ cor letra footer: #fffff
 }
 .cabecalho__menu{
     display: inline-block;
-    float: right;
-    margin: 30px;
+    margin-right: -4px;
+    vertical-align: top;
 }
 .cabecalho__menu__lista{
     display: none;
@@ -57,32 +84,69 @@ cor letra footer: #fffff
 
 @media (min-width:768px){
     /* GRID */
+
+    /*Limpeza de crid anterior (celular) */
+    [class*='col-cl']{
+        width:0;
+        margin-left: 0;
+    }
+
     .col-tb-1{
-        width: 11,11%;
+        width: calc((100% /9));
     }
     .col-tb-2{
-        width: 22,22%;
+        width: calc((100% /9)*2);
     }
     .col-tb-3{
-        width: 33,33%;
+        width: calc((100% /9)*3);
     }
     .col-tb-4{
-        width: 44,44%;
+        width: calc((100% /9)*4);
     }
     .col-tb-5{
-        width: 55,55%;
+        width: calc((100% /9)*5); 
     }
     .col-tb-6{
-        width: 66,66%;
+        width: calc((100% /9)*6); 
     }
     .col-tb-7{
-        width: 77,77%;
+        width: calc((100% /9)*7); 
     }
     .col-tb-8{
-        width: 88,88%;
+        width: calc((100% /9)*8); 
     }
     .col-tb-9{
-        width: 100%;
+        width: calc((100% /9)*9); 
+    }
+    
+    /*OFFSET - ESPAÇO EM BRANCO*/
+    
+    .col-tb-offset-1{
+        margin-left: calc((100% /9));
+    }
+    .col-tb-offset-2{
+        margin-left: calc((100% /9)*2);
+    }
+    .col-tb-offset-3{
+        margin-left: calc((100% /9)*3);
+    }
+    .col-tb-offset-4{
+        margin-left: calc((100% /9)*4);
+    }
+    .col-tb-offset-5{
+        margin-left: calc((100% /9)*5);
+    }
+    .col-tb-offset-6{
+        margin-left: calc((100% /9)*6);
+    }
+    .col-tb-offset-7{
+        margin-left: calc((100% /9)*7);
+    }
+    .col-tb-offset-8{
+        margin-left: calc((100% /9)*8);
+    }
+    .col-tb-offset-9{
+        margin-left: calc((100% /9)*9);
     }
 
     /* CABECALHO */
@@ -91,14 +155,98 @@ cor letra footer: #fffff
     }
     .cabecalho__menu__lista{
         display: flex;
-        text-decoration: none;
+        justify-content: space-around;
+        list-style-type: none; 
     }
     .cabecalho__menu__lista__item{
-        text-decoration: none;
+        text-transform: uppercase;
     }
 } 
 @media (min-width:992px){   
+    /* GRID */
+
+    /*Limpeza de crid anterior (tablet) */
+    [class*='col-tb']{
+        width:0;
+        margin-left: 0;
+    }
+
+    .col-dk-1{
+        width: calc((100% /12));
+    }
+    .col-dk-2{
+        width: calc((100% /12)*2);
+    }
+    .col-dk-3{
+        width: calc((100% /12)*3);
+    }
+    .col-dk-4{
+        width: calc((100% /12)*4);
+    }
+    .col-dk-5{
+        width: calc((100% /12)*5); 
+    }
+    .col-dk-6{
+        width: calc((100% /12)*6); 
+    }
+    .col-dk-7{
+        width: calc((100% /12)*7); 
+    }
+    .col-dk-8{
+        width: calc((100% /12)*8); 
+    }
+    .col-dk-9{
+        width: calc((100% /12)*9); 
+    }
+    .col-dk-10{
+        width: calc((100% /12)*10); 
+    }
+    .col-dk-11{
+        width: calc((100% /12)*11); 
+    }
+    .col-dk-12{
+        width: calc((100% /12)*12); 
+    }
+
     
+    /*OFFSET - ESPAÇO EM BRANCO*/
+    
+    .col-dk-offset-1{
+        margin-left: calc((100% /12));
+    }
+    .col-dk-offset-2{
+        margin-left: calc((100% /12)*2);
+    }
+    .col-dk-offset-3{
+        margin-left: calc((100% /12)*3);
+    }
+    .col-dk-offset-4{
+        margin-left: calc((100% /12)*4);
+    }
+    .col-dk-offset-5{
+        margin-left: calc((100% /12)*5);
+    }
+    .col-dk-offset-6{
+        margin-left: calc((100% /12)*6);
+    }
+    .col-dk-offset-7{
+        margin-left: calc((100% /12)*7);
+    }
+    .col-dk-offset-8{
+        margin-left: calc((100% /12)*8);
+    }
+    .col-dk-offset-9{
+        margin-left: calc((100% /12)*9);
+    }
+    .col-dk-offset-10{
+        margin-left: calc((100% /12)*10);
+    }  
+    .col-dk-offset-11{
+        margin-left: calc((100% /12)*11);
+    }  
+    .col-dk-offset-12{
+        margin-left: calc((100% /12)*12);
+    }   
 }
 @media (min-width:1200px){   
     
